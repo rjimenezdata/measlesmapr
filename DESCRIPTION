@@ -2,8 +2,8 @@ Package: measlesmapr
 Title: The measlesmapr Package
 Version: 0.0.0.9000
 Authors@R: c(
-    person("Jasmine", "Cabrera", , "jkscabrera2003@gmail.com", role = c("aut", "cre"))
-    person("Ruben", "Jimenez", , "rubensusername@gmail.com", role = c("aut", "cre"))
+    person("Jasmine", "Cabrera", , "jkscabrera2003@gmail.com", role = c("aut", "cre")),
+    person("Ruben", "Jimenez", , "rubensusername@gmail.com", role = c("aut", "cre")),
     person("Cameron", "An", , "cameronan03@gmail.com", role = c("aut", "cre"))
     )
 Description: A set of functions designed to simplify the tracking and analysis of global measles cases across time.
