@@ -1,11 +1,21 @@
-Package: measlesmapr
-Title: What the Package Does (One Line, Title Case)
+Package: MeaslesMapR
+Title: The MeaslesMapR Package
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Jasmine", "Cabrera", , "jkscabrera2003@gmail.com", role = c("aut", "cre"))
+    person("Ruben", "Jimenez", , "rubensusername@gmail.com", role = c("aut", "cre"))
+    person("Cameron", "An", , "cameronan03@gmail.com", role = c("aut", "cre"))
+Description: A set of functions designed to simplify the tracking and analysis of global measles cases across time.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
+Imports: 
+    readr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/jasminecabrera/MeaslesMapR
+BugReports: https://github.com/jasminecabrera/MeaslesMapR/issues
