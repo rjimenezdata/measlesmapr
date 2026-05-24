@@ -16,5 +16,6 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+Config/Needs/website: quarto
 URL: https://github.com/rjimenezdata/measlesmapr
 BugReports: https://github.com/rjimenezdata/MeaslesMapR/issues
