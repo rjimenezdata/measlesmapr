@@ -1,10 +1,11 @@
 Package: measlesmapr
 Title: The measlesmapr Package
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R: c(
     person("Jasmine", "Cabrera", , "jkscabrera2003@gmail.com", role = c("aut", "cre"))
     person("Ruben", "Jimenez", , "rubensusername@gmail.com", role = c("aut", "cre"))
     person("Cameron", "An", , "cameronan03@gmail.com", role = c("aut", "cre"))
+    )
 Description: A set of functions designed to simplify the tracking and analysis of global measles cases across time.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -18,4 +19,4 @@ Suggests:
 VignetteBuilder: knitr
 Config/Needs/website: quarto
 URL: https://github.com/rjimenezdata/measlesmapr
-BugReports: https://github.com/rjimenezdata/MeaslesMapR/issues
+BugReports: https://github.com/rjimenezdata/measlesmapr/issues

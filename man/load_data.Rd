@@ -18,5 +18,5 @@ Loading in Measles Data from TidyTuesday
 }
 \examples{
 y <- load_data()
-tibble(y)
+y
 }

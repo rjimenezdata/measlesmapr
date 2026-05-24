@@ -1,5 +1,4 @@
 ---
-usethis::use_github()---
 title: "main-functions"
 output: rmarkdown::html_vignette
 vignette: >
