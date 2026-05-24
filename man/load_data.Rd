@@ -16,3 +16,7 @@ information for 194 countries across multiple years and months.
 \description{
 Loading in Measles Data from TidyTuesday
 }
+\examples{
+y <- load_data()
+tibble(y)
+}
