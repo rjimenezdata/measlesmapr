@@ -6,6 +6,7 @@
 #' @export
 #'
 #' @examples
+#' summarizeYear(2015)
 summarizeYear <- function(year) {
 
   validateYear(year1 = year)
