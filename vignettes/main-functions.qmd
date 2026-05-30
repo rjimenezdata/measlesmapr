@@ -19,30 +19,17 @@ knitr::opts_chunk$set(
 library(MeaslesMapR)
 ```
 
-### plotVaccination
+### plotCases
 
 ```{r}
-#| label: plotVaccination
+#| label: plotCases
 
-# plotVaccination
-plotVaccination(country, 
-               min_year = 2014, 
-               max_year = 2024)
+# plotCases
+plotCases(region, legend = F)
 ```
 
-When provided with a country and an optional year range, mapVaccination generates a line plot displaying a country's MCV1 vaccination rate across time.
+When provided with region(s) and an optional legend specification, plotCases generates a line plot displaying the total cases for countries in the regions.
 
-### mapRegion
-
-```{r}
-#| label: mapRegion
-
-# mapRegion
-mapRegion(region = "ALL", 
-          year)
-```
-
-When provided with one or more regions and a year, mapRegion generates a leaflet map highlighting the specified region, with each country annotated by its corresponding measles cases per million, MCV1 vaccination coverage and nominal GDP for the selected year. By default, the region parameter includes all regions.
 
 ### summarizeYear
 
@@ -53,4 +40,37 @@ When provided with one or more regions and a year, mapRegion generates a leaflet
 summarizeYear(year)
 ```
 
-When provided with a year, summarizeYear generates a table where each row represents a region along with its average measles cases per million and average population. The table is sorted in descending order by average measles cases per million and uses a darker color gradient to visually indicate higher case counts.
+When provided with a year, summarizeYear generates a table where each row represents a region along with its average measles cases per million and the country with the highest number of cases for that year.
+
+### filter_data
+
+```{r}
+#| label: filter_data
+
+# filter_data
+filter_data(data)
+```
+
+A helper function that cleans the data loaded in from load_data(). 
+
+### validateRegion
+
+```{r}
+#| label: validateRegion
+
+# validateRegion
+validateRegion(region, data)
+```
+
+A helper function that when given a region name and a data frame, checks whether the data frame contains data for that region.
+
+### validateYear
+
+```{r}
+#| label: validateYear
+
+# validateYear
+validateYear(year1, year2 = NULL)
+```
+
+A helper function that given two years, checks that the years are actual years.

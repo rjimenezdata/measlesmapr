@@ -36,5 +36,6 @@ summarizeYear <- function(year) {
     dplyr::left_join(max_cases, by = dplyr::join_by(Year == Year,
                                       Region == Region)) |>
     dplyr::rename("Most Affected Country" = "Country",
-           "Maximum Cases per Million" = "Total Measles per Million")
+           "Maximum Cases per Million" = "Total Measles per Million") |>
+    dplyr::select(Year, Region, `Total Cases per Million`, `Mean Cases per Million`, `Most Affected Country`, `Maximum Cases per Million`)
 }
