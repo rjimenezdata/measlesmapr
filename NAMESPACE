@@ -2,6 +2,7 @@
 
 export(filter_data)
 export(load_data)
-export(plotVaccination)
+export(plotCases)
 export(summarizeYear)
+export(validateRegion)
 export(validateYear)
