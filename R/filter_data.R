@@ -5,9 +5,6 @@
 #' @returns Filtered and cleaned data frame.
 #'
 #' @export
-#'
-#' @examples
-#' filter_data()
 
 filter_data <- function(data){
 
@@ -38,7 +35,7 @@ filter_data <- function(data){
     dplyr::select(-c(rubella_clinical, rubella_epi_linked,
                      rubella_lab_confirmed, rubella_total,
                      rubella_incidence_rate_per_1000000_total_population)) |>
-      rename("Region" = region,
+      dplyr::rename("Region" = region,
              "Country" = country,
              "Country Code" = iso3,
              "Year" = year,

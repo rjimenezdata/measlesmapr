@@ -15,3 +15,6 @@ Data frame with summarized Measles case data for a range of years
 \description{
 Summarizes a years' worth of global Measles case data
 }
+\examples{
+summarizeYear(2015)
+}
