@@ -15,6 +15,3 @@ Filtered and cleaned data frame.
 \description{
 Filters Data
 }
-\examples{
-filter_data()
-}

@@ -10,7 +10,8 @@ filter_data <- function(data){
 
   if ("month" %in% colnames(data)) {
 
-    dplyr::select(-c(rubella_clinical, rubella_epi_linked,
+    data |>
+      dplyr::select(-c(rubella_clinical, rubella_epi_linked,
                      rubella_lab_confirmed, rubella_total)) |>
       dplyr::rename("Region" = region,
              "Country" = country,
@@ -32,6 +33,7 @@ filter_data <- function(data){
 
   else {
 
+    data |>
     dplyr::select(-c(rubella_clinical, rubella_epi_linked,
                      rubella_lab_confirmed, rubella_total,
                      rubella_incidence_rate_per_1000000_total_population)) |>
