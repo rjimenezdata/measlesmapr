@@ -16,24 +16,24 @@ summarizeYear <- function(year) {
 
   max_cases <- measles |>
 
-    filter(Year == year) |>
+    dplyr::filter(Year == year) |>
 
-    group_by(Region) |>
+    dplyr::group_by(Region) |>
 
-    slice_max(`Total Measles per Million`, n = 1) |>
+    dplyr::slice_max(`Total Measles per Million`, n = 1) |>
 
-    ungroup()
+    dplyr::ungroup()
 
   measles |>
-    group_by(Year, Region) |>
-    summarize(
+    dplyr::group_by(Year, Region) |>
+    dplyr::summarize(
       `Total Cases per Million` = sum(`Total Measles per Million`, na.rm = T),
       `Mean Cases per Million` = mean(`Total Measles per Million`, na.rm = T)
               ) |>
-    ungroup() |>
-    filter(Year == year) |>
-    left_join(max_cases, by = join_by(Year == Year,
+    dplyr::ungroup() |>
+    dplyr::filter(Year == year) |>
+    dplyr::left_join(max_cases, by = dplyr::join_by(Year == Year,
                                       Region == Region)) |>
-    rename("Most Affected Country" = "Country",
+    dplyr::rename("Most Affected Country" = "Country",
            "Maximum Cases per Million" = "Total Measles per Million")
 }
