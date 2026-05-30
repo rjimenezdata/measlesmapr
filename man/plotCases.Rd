@@ -8,6 +8,8 @@ plotCases(region, legend = F)
 }
 \arguments{
 \item{region}{A vector of region names.}
+
+\item{legend}{Whether a legend should be displayed (warning: typically illegible)}
 }
 \value{
 A plot displaying number of measles cases across all years in these regions.

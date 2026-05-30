@@ -1,6 +1,7 @@
 #' Plot number of cases in region(s) by year.
 #'
 #' @param region A vector of region names.
+#' @param legend Whether a legend should be displayed (warning: typically illegible)
 #'
 #' @returns A plot displaying number of measles cases across all years in these regions.
 #' @export

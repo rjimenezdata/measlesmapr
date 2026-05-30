@@ -11,7 +11,13 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
 Imports: 
-    readr
+    readr,
+    dplyr,
+    ggplot2,
+    ggrepel,
+    lubridate,
+    stringi,
+    stringr
 Suggests: 
     knitr,
     rmarkdown,

@@ -24,7 +24,7 @@ filter_data <- function(data){
              "Lab Measles" = measles_lab_confirmed,
              "Total Measles" = measles_total,
              "Discarded" = discarded) |>
-      dplyr::mutate(Date = my(stringr::str_c(Month, "-", Year)),
+      dplyr::mutate(Date = lubridate::my(stringr::str_c(Month, "-", Year)),
              ASCII = stringi::stri_trans_general(Country, "Latin-ASCII")) |>
       dplyr::select(-c(Year, Month)) |>
       dplyr::relocate(Date)
