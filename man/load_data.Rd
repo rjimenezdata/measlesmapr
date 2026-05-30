@@ -17,6 +17,5 @@ information for 194 countries across multiple years and months.
 Loading in Measles Data from TidyTuesday
 }
 \examples{
-y <- load_data()
-y
+load_data()
 }

@@ -1,5 +1,5 @@
-Package: measlesmapr
-Title: The measlesmapr Package
+Package: MeaslesMapR
+Title: The MeaslesMapR Package
 Version: 0.0.0.9000
 Authors@R: 
     person("Jasmine", "Cabrera", , "jkscabrera2003@gmail.com", role = c("aut", "cre"))
@@ -14,8 +14,9 @@ Imports:
     readr
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
-Config/Needs/website: quarto
 URL: https://github.com/rjimenezdata/measlesmapr
 BugReports: https://github.com/rjimenezdata/measlesmapr/issues
+Config/testthat/edition: 3
