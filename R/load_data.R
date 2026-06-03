@@ -12,6 +12,6 @@
 #' load_data()
 
 load_data <- function(){
-  path <- system.file("inst", "extdata", "measles_df_clean.csv", package = "MeaslesMapR")
+  path <- system.file("extdata", "measles_df_clean.csv", package = "MeaslesMapR")
   arrow::read_csv_arrow(path)
   }

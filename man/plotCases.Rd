@@ -7,7 +7,7 @@
 plotCases(region, legend = F)
 }
 \arguments{
-\item{region}{A vector of region names.}
+\item{region}{A vector of region names. Valid regions include "Africa," "Americas," "Eastern Mediterranean," "Europe," "South East Asia," and "Western Pacific"}
 
 \item{legend}{Whether a legend should be displayed (warning: typically illegible)}
 }
@@ -18,5 +18,5 @@ A plot displaying number of measles cases across all years in these regions.
 Plot number of cases in region(s) by year.
 }
 \examples{
-plotCases("AMRO")
+plotCases("Eastern Mediterranean")
 }

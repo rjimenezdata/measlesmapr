@@ -11,9 +11,7 @@ summarizeYear <- function(year) {
 
   validateYear(year1 = year)
 
-  raw_data <- load_data()
-
-  measles <- filter_data(raw_data$cases_year)
+  measles <- load_data()
 
   max_cases <- measles |>
 

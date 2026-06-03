@@ -43,16 +43,6 @@ summarizeYear(year)
 
 When provided with a year, summarizeYear generates a table where each row represents a region along with its average measles cases per million and the country with the highest number of cases for that year.
 
-### filter_data
-
-```{r}
-#| label: filter_data
-
-# filter_data
-filter_data(data)
-```
-
-A helper function that cleans the data loaded in from load_data(). 
 
 ### validateRegion
 
@@ -63,7 +53,7 @@ A helper function that cleans the data loaded in from load_data().
 validateRegion(region, data)
 ```
 
-A helper function that when given a region name and a data frame, checks whether the data frame contains data for that region.
+A helper function that when given a region name and a data frame, checks whether the data frame contains data for that region. Valid regions include "Africa," "Americas," "Eastern Mediterranean," "Europe," "South East Asia," and "Western Pacific"
 
 ### validateYear
 

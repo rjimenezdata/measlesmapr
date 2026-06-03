@@ -2,18 +2,18 @@
 % Please edit documentation in R/summarizeRegion.R
 \name{summarizeRegion}
 \alias{summarizeRegion}
-\title{Summarizes a region's countries within the data set}
+\title{Summarizes the cases within a region's countries}
 \usage{
 summarizeRegion(region)
 }
 \arguments{
-\item{region}{Region to summarize}
+\item{region}{Region to summarize. Valid regions include "Africa," "Americas," "Eastern Mediterranean," "Europe," "South East Asia," and "Western Pacific"}
 }
 \value{
 Data frame with summarized Measles case data for a single region
 }
 \description{
-Summarizes a region's countries within the data set
+Summarizes the cases within a region's countries
 }
 \examples{
 summarizeRegion(AMRO)
