@@ -29,6 +29,7 @@ plotCases(region, legend = F)
 ```
 
 When provided with region(s) and an optional legend specification, plotCases generates a line plot displaying the total cases for countries in the regions.
+ Valid regions are "AMRO," "AFRO," "WPRO," "EURO," "SEARO," "EMRO"
 
 
 ### summarizeYear

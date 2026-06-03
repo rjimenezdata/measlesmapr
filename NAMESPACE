@@ -3,6 +3,7 @@
 export(filter_data)
 export(load_data)
 export(plotCases)
+export(summarizeRegion)
 export(summarizeYear)
 export(validateRegion)
 export(validateYear)

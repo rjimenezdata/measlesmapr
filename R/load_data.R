@@ -12,5 +12,6 @@
 #' load_data()
 
 load_data <- function(){
-  list(cases_month = readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-06-24/cases_month.csv'),
-       cases_year = readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-06-24/cases_year.csv'))}
+  path <- system.file("inst", "extdata", "measles_df_clean.csv", package = "MeaslesMapR")
+  arrow::read_csv_arrow(path)
+  }
