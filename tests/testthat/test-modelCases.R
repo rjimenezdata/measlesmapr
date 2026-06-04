@@ -1,4 +1,4 @@
-test_that("multiplication works", {
+test_that("modelCases returns a summary of model output", {
   expect_s3_class(modelCases(), "gt_tbl")
   expect_s3_class(modelCases(interaction = F), "gt_tbl")
   expect_type(modelCases(), "list")
