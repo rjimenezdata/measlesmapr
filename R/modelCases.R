@@ -9,6 +9,14 @@
 #' modelCases()
 
 modelCases <- function(interaction = T) {
+
+  if(!is.logical(interaction) || length(interaction) != 1 || is.na(interaction)) {
+    stop(
+      "`interaction` must be either TRUE or FALSE.",
+      call. = FALSE
+    )
+  }
+
   model_data <- load_data()
 
   model_data <- model_data |>
