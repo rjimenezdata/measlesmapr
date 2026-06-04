@@ -85,4 +85,26 @@ A helper function that given two years as integers, checks that the years are ac
 modelCases(interaction = T)
 ```
 
-Runs a model and displays summary output for a generalized linear negative binomial model with total measles as the response
+Runs a model and displays summary output for a generalized linear negative binomial model with total measles as the response.
+
+### load_WorldData
+
+```{r}
+#| label: modelCases
+
+# load_WorldData
+load_WorldData(target_year)
+```
+
+Generates a cleaned dataset that holds the measles data for each country across varying years as well as its polygon shapes to create a leaflet map.
+
+### mapCases
+
+```{r}
+#| label: mapCases
+
+# mapCases
+mapCases(target_year)
+```
+
+Generates a leaflet map that highlights countries based on their region. When hovering over a given region, it produces a popup that shows the countries' measles cases, MCV1 Coverage and Nominal GDP per Capita for a given year.
