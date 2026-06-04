@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' summarizeRegion(AMRO)
+#' summarizeRegion("Americas")
 summarizeRegion <- function(region) {
 
   measles <- load_data()

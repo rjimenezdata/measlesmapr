@@ -16,5 +16,5 @@ Data frame with summarized Measles case data for a single region
 Summarizes the cases within a region's countries
 }
 \examples{
-summarizeRegion(AMRO)
+summarizeRegion("Americas")
 }
