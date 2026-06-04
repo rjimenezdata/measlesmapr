@@ -28,7 +28,7 @@ library(MeaslesMapR)
 plotCases(region, legend = F)
 ```
 
-When provided with region and an optional legend specification, plotCases generates a line plot displaying the total cases for countries in the region.
+When provided with region as a string and an optional legend boolean specification, plotCases generates a line plot displaying the total cases for countries in the region.
  Valid regions include "Africa," "Americas," "Eastern Mediterranean," "Europe," "South East Asia," and "Western Pacific."
 
 
@@ -41,7 +41,7 @@ When provided with region and an optional legend specification, plotCases genera
 summarizeYear(year)
 ```
 
-When provided with a year, summarizeYear generates a table where each row represents a region along with its average measles cases per million and the country with the highest number of cases for that year.
+When provided with a year as an integer, summarizeYear generates a table where each row represents a region along with its average measles cases per million and the country with the highest number of cases for that year.
 
 ### summarizeRegion
 
@@ -52,7 +52,7 @@ When provided with a year, summarizeYear generates a table where each row repres
 summarizeRegion(region)
 ```
 
-When provided with a region, summarizeRegion generates a table where each row represents one country in the region and its measles cases count per million over each year in the data.
+When provided with a region as a string, summarizeRegion generates a table where each row represents one country in the region and its measles cases count per million over each year in the data.
 
 ### validateRegion
 
@@ -63,7 +63,7 @@ When provided with a region, summarizeRegion generates a table where each row re
 validateRegion(region, data)
 ```
 
-A helper function that when given a region name and a data frame, checks whether the data frame contains data for that region. Valid regions include "Africa," "Americas," "Eastern Mediterranean," "Europe," "South East Asia," and "Western Pacific"
+A helper function that when given a region name as a string and a data frame, checks whether the data frame contains data for that region. Valid regions include "Africa," "Americas," "Eastern Mediterranean," "Europe," "South East Asia," and "Western Pacific"
 
 ### validateYear
 
@@ -74,7 +74,7 @@ A helper function that when given a region name and a data frame, checks whether
 validateYear(year1, year2 = NULL)
 ```
 
-A helper function that given two years, checks that the years are actual years.
+A helper function that given two years as integers, checks that the years are actual years.
 
 ### modelCases
 
