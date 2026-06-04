@@ -17,7 +17,7 @@ plotCases <- function(region, legend = F) {
 
   max_point <- measles |>
     dplyr::filter(Region == region) |>
-    dplyr::slice_max(`Total Measles per Million`, n = 1)
+    dplyr::slice_max(`Total Measles per Million`, n = 3)
 
 
   if (legend == F) {
