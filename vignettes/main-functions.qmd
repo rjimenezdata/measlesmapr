@@ -28,7 +28,7 @@ library(MeaslesMapR)
 plotCases(region, legend = F)
 ```
 
-When provided with region(s) and an optional legend specification, plotCases generates a line plot displaying the total cases for countries in the regions.
+When provided with region and an optional legend specification, plotCases generates a line plot displaying the total cases for countries in the region.
  Valid regions include "Africa," "Americas," "Eastern Mediterranean," "Europe," "South East Asia," and "Western Pacific."
 
 
