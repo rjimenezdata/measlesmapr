@@ -4,7 +4,7 @@ test_that("display 2015", {
   expect_error(summarizeYear(2001))
   expect_error(summarizeYear("apple"))
   tbl <- summarizeYear(2015)
-  expect_equal(tbl$Region[1], "AFRO")
+  expect_equal(tbl$Region[1], "Africa")
   expect_equal(round(tbl$`Total Cases per Million`[2], 2), 7.17)
 })
 

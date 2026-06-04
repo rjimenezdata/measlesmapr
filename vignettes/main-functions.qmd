@@ -75,3 +75,14 @@ validateYear(year1, year2 = NULL)
 ```
 
 A helper function that given two years, checks that the years are actual years.
+
+### modelCases
+
+```{r}
+#| label: modelCases
+
+# modelCases
+modelCases(interaction = T)
+```
+
+Runs a model and displays summary output for a generalized linear negative binomial model with total measles as the response
